@@ -1,16 +1,33 @@
 import React, { useState } from 'react';
 import { Transition } from "@headlessui/react";
- 
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [showLinks, setShowLinks] = useState(false)
 
     return (
-        <div className="w-full md:fixed h-1/6">
-            <nav>
-            </nav>
+        <div className="navbar fixed w-full h-14 flex items-center justify-center" style={{backgroundColor: "#121222"}}>
+            <div 
+                className="links flex items-center justify-center" 
+                id={showLinks ? "hidden" : ""}
+            >
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Home</a>
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">About</a>
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Services</a>
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Skills</a>
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Contact Us</a>
+            </div> 
+            <button 
+                className="hidden duration"
+                onClick={() => setShowLinks(!showLinks)}
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>                                
         </div>
     )
 }
- 
+
 export default Navbar;

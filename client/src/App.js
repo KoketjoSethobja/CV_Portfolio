@@ -1,16 +1,21 @@
 import './App.css';
 import {BrowserRouter, Route, Router, Switch} from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Welcome from './components/Welcome';
+import Home from './components/Home';
 import About from './components/About';
-
+import Skills from './components/Skills';
+import ContactMe from './components/ContactMe';
+import Services from './components/Services';
 
 function App() {
 	return (
 		<BrowserRouter>
-			<div className="">
-				
-			</div>
+			<Navbar />			
+			<Home />
+			<About />
+			<Services />
+			<Skills />
+			<ContactMe />
 		</BrowserRouter>		
 	);
 }
