@@ -75,4 +75,49 @@ body::-webkit-scrollbar-thumb {
         margin: 5px;
         font-size: 0.875rem;
     }
+    /*  
+    
+    */
+    .home-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;        
+    }
+    .home-div .leftside {
+        width: 100%;
+        padding: 2rem;
+    }
+    .home-div .rightside {
+        width: 100%;
+    }
+
+    /* 
+    
+    */
+    .about-all {
+        padding: 1rem;
+    }
+    .about-all .header {
+        padding: 0;
+        height: 5%;
+    }
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        height: 95%;
+    }
+    .aboutme .leftside {
+        height: 30%;
+        width: 80%;        
+        padding: 0;
+    }
+    .aboutme .rightside {
+        height: 60%;
+        width: 100%;
+    }
+    .aboutme .rightside p{
+        height: 70%;
+    }
 }
