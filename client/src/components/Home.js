@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div className="home-div w-full h-screen bg-gray-900 flex bg-cover flex items-center justify-center" style={{backgroundImage: "url('../Fade-In-Background.svg')"}}>
+        <div className="home-div w-full h-screen bg-gray-900 flex bg-cover flex items-center justify-center bg-fixed" style={{backgroundImage: "url('../Fade-In-Background.svg')"}}>
             <div className="leftside w-2/4 p-24 text-white">
                 <h1 className="text-2xl my-4">Hello, my name is</h1>
                 <h1 className="text-5xl my-4 font-bold">Koketjo Sethobja</h1>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Transition } from "@headlessui/react";
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [showLinks, setShowLinks] = useState(false)
 
@@ -12,11 +12,12 @@ const Navbar = () => {
                 className="links flex items-center justify-center" 
                 id={showLinks ? "hidden" : ""}
             >
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Home</a>
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">About</a>
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Services</a>
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Skills</a>
-                <a className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Contact Us</a>
+                <a className="link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Home</a>
+                <a className="link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">About</a>
+                <a className="link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Services</a>
+                <a className="link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Skills</a>
+                <a className="link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Projects</a>
+                <a className="link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium duration-500 mx-1" href="">Contact Us</a>
             </div> 
             <button 
                 className="hidden duration-300"
